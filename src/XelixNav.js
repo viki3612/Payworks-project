@@ -13,10 +13,10 @@ export default function Navigation () {
  <img src={logo} alt="logo" width="130" height="90" className="img-fluid">
       </img>
       <ul className="navbar-nav ms-auto mb-2">
-      <img src={avatar} alt="profile-image" width="40" height="42"  className="profile-image">
+      <img src={avatar} alt="avatar"width="40" height="42"  href="#" className="profile-image">
       </img>
         <li className="nav-item">
-          <a className="nav-link" aria-current="page">Home</a>
+          <a className="nav-link" aria-current="page" href="#">Home</a>
         </li>
         <li className="nav-item-2">
           <a className="nav-link">Dashboard</a>

@@ -1,0 +1,17 @@
+.invoice-row {
+    font-size:12px;
+    color:#143230;
+  }
+
+.header-row{
+  font-size: 14px;
+}
+
+@media ((max-width: 960px)) {
+  .invoice-row{
+      font-size:10px;
+    }
+    .header-row{
+      font-size: 12px;
+    }
+  }

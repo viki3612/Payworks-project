@@ -1,0 +1,39 @@
+.XelixSearch{
+  background-color: var(--default-color);
+border-radius: 12px;
+  padding:40px 0px;
+  margin:0 auto;
+}
+.line{
+  color:#D9D9D9;
+  border:1px solid;
+
+}
+.col h3{
+  margin-left:35px;
+margin-bottom:0px;
+}
+
+.form-group{
+display:flex;
+align-items: center;
+}
+ #search{
+    transition: all .2s ease-in-out;
+    margin-right:35px;
+    margin-left:5px;
+}
+
+/* Styles for screens smaller than 768px (mobile) */
+@media ((max-width: 960px)) {
+.title{
+    font-size:16px;
+    display: grid;
+  }
+  .XelixSearch{
+padding:20px 20px;
+  }
+  .form-control{
+    font-size:8px;
+  }
+}

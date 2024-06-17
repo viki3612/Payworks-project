@@ -1,0 +1,29 @@
+.navigation{
+background-color:var(--primary-color);
+padding:20px 0px;
+}
+
+nav .navbar-nav li a{
+    color: white !important;
+    margin-left:15px;
+    }
+    
+.nav-item-2{
+text-decoration: underline;
+color:white;
+}
+.welcome{
+    text-align:center;
+    color:var(--default-color);
+    background-color:var(--primary-color);
+    margin:20px 0px 60px;
+  }
+
+  /* Styles for screens smaller than 768px (mobile) */
+@media (max-width: 960px) {
+.welcome{
+    font-size:32px;
+    font-weight: 400;
+  }
+
+}

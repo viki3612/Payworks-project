@@ -1,20 +1,23 @@
 .invoice-row {
     font-size:12px;
     color:#143230;
-
   }
+ 
   .header-row{
     font-size: 16px;
+    margin-right:35px;
+
   }
 .pending-status{
   background-color: var(--additional-color3);
   border-radius:8px;
 padding:4px;
-display:flexbox;
-text-align: center;
+max-width: fit-content;
+max-height: fit-content;
 }
 .paid-status{
 padding:0px;
+margin:5px;
 }
 
 

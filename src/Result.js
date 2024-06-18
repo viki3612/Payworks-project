@@ -26,7 +26,7 @@ export default function Result({invoices,onExcludeToggle} ) {
 
         {/* map through invoicefields*/}
         {invoiceFields.map((field) => (
-          <div className="col" key={field}>
+          <div className="col titles" key={field}>
             {field.toUpperCase().replace(/_/g, " ")}
           </div>
         ))}

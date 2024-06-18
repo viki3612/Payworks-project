@@ -16,10 +16,10 @@ export default function Navigation () {
       <img src={avatar} alt="avatar"width="40" height="42"  href="#0" className="profile-image">
       </img>
         <li className="nav-item">
-          <a className="nav-link" aria-current="page" href="#0">Home</a>
+          <button className="nav-link" aria-current="page" href="#0">Home</button> 
         </li>
         <li className="nav-item-2">
-          <a className="nav-link">Dashboard</a>
+          <button className="nav-link">Dashboard</button>
         </li>
         </ul>
 </div>

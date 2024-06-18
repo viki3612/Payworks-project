@@ -3,9 +3,10 @@ background-color:var(--primary-color);
 padding:20px 0px;
 }
 
-nav .navbar-nav li a{
+nav .navbar-nav li button{
     color: white !important;
     margin-left:15px;
+  border:none;
     }
     
 .nav-item-2{

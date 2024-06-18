@@ -8,7 +8,7 @@ export default function App() {
     <div className="App">
         <XelixNav />
       
-    
+        <div style={styles}></div>
     </div>
   );
 }

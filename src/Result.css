@@ -1,11 +1,18 @@
 .invoice-row {
     font-size:12px;
     color:#143230;
+
   }
 
-.header-row{
-  font-size: 14px;
+.pending-status{
+  background-color: var(--additional-color3);
+  border-radius:8px;
+padding:4px;
+text-align: center;
+max-width: fit-content;
 }
+
+
 
 @media ((max-width: 960px)) {
   .invoice-row{
@@ -14,4 +21,8 @@
     .header-row{
       font-size: 12px;
     }
+    .pending-status{
+      max-width: 100%;
   }
+
+}

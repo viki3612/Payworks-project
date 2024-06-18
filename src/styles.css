@@ -1,9 +1,10 @@
 :root{
     --primary-color:#127780;
-    --secondary-color:#15EDA3;
+    --secondary-color:rgb(21, 237, 163);
     --default-color:#ffff;
     --additional-color1:rgb(18, 119, 128,0.6);
     --additional-color2:rgb(249, 231, 182);
+    --additional-color3:rgb(21, 237, 163, 0.31);
     --default-font-family:"Poppins", sans-serif;
 }
 body{

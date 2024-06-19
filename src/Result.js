@@ -3,7 +3,6 @@ import "./Result.css";
 import Checkbox from "./Checkbox.js";
 import Excluded from "./Excluded.js";
 
-
 export default function Result({invoices,onExcludeToggle} ) {
    const invoiceFields = [
     "supplier",
@@ -21,23 +20,23 @@ export default function Result({invoices,onExcludeToggle} ) {
   return (
     <div className="Result">
         <div className="container"> {/* Wrap whole structure in a container */}
-      <div className="row header-row mb-4"> 
-        <div className="col"></div> {/* Empty column for checkbox */}
+        <div className="row header-row mb-4"> 
+        <div className="col" id="tickbox"></div> {/* Empty column for checkbox */}
 
         {/* map through invoicefields*/}
         {invoiceFields.map((field) => (
-          <div className="col titles" key={field}>
+          <div className="col" key={field}>
             {field.toUpperCase().replace(/_/g, " ")}
           </div>
         ))}
       </div>
- {/* map through invoices to create a row for each*/}
+      {/* map through invoices to create a row for each*/}
  {invoices.map((invoice) => (
         <div className="row invoice-row mb-2" key={invoice.invoice_number}> 
             <Checkbox  />
                   {/* map through invoice fields to create a column with the values of the data corresponding to the right col fields. Render invoice fields EXCLUDING 'excluded'*/}
                   {invoiceFields.slice(0, -1).map((field) => (
-                       <div className={`col d-flex invoice-field ${invoice[field] === "pending" ? "pending-status" : "paid-status"}`}
+                       <div className={`col d-flex invoice-field ${invoice[field] === "pending" ?  "invoice-field--pending" : "invoice-field--paid"}`}
                        key={`${invoice.invoice_number}-${field}`}>
                          {invoice[field]}
                        </div>
@@ -50,6 +49,7 @@ export default function Result({invoices,onExcludeToggle} ) {
                         </div>
             )
            )}
+ 
       </div>
     </div>
   );

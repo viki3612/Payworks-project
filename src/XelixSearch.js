@@ -64,9 +64,9 @@ id="search">
 
 </div>           
 <hr className="line"></hr>
+</div>
  {/* passing invoice prop into results component and the onExcludeToggle function*/}
  <Result invoices={invoices} onExcludeToggle={onExcludeToggle} />
-</div>
 <Buttons />
     </div>
     )

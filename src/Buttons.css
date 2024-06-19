@@ -1,13 +1,13 @@
-.buttons {
-margin-right: 35px;
+.buttons{
+    display:flex;
+    justify-content: end;
+    margin:0px 110px;
 }
-
 #pay-button, 
     #exclude-button{
     border: none;
     color:#143230;
     font-weight: 500;
- 
 }
 
 #exclude-button{
@@ -32,6 +32,11 @@ background-color: rgb(247, 199, 67);
     .btn{
 font-size:10px;
       }
-    
-    
+      @media ((max-width: 812px)) {
+       .buttons{
+      margin:15px;
+      display:flex;
+      justify-content: center;
+       }
     }
+}

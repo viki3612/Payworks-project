@@ -36,7 +36,7 @@ export default function Result({invoices,onExcludeToggle} ) {
             <Checkbox  />
                   {/* map through invoice fields to create a column with the values of the data corresponding to the right col fields. Render invoice fields EXCLUDING 'excluded'*/}
                   {invoiceFields.slice(0, -1).map((field) => (
-                       <div className={`col d-flex invoice-field ${invoice[field] === "pending" ?  "invoice-field--pending" : "invoice-field--paid"}`}
+                       <div className={`col invoice-field ${invoice[field] === "pending" ?  "invoice-field--pending" : "invoice-field--paid"}`}
                        key={`${invoice.invoice_number}-${field}`}>
                          {invoice[field]}
                        </div>

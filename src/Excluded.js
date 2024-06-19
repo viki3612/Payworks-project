@@ -1,4 +1,5 @@
 import React from "react";
+import "./Excluded.css";
 
 export default function Excluded({ invoiceNumber, onExcludeToggle}) {
   return (
